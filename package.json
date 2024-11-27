@@ -1,0 +1,26 @@
+{
+	"name": "blocklist",
+	"version": "1.0.0",
+	"description": "Application to monitor BlueSky and automatically add bots / imposter accounts to a blocklist",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node dist/index.js",
+		"build": "tsc",
+		"test": "npm run build && node dist/index.js"
+	},
+	"dependencies": {
+		"@atproto/api": "^0.13.18",
+		"dotenv": "^16.4.5",
+		"ws": "^8.18.0"
+	},
+	"devDependencies": {
+		"@atproto/oauth-client-node": "^0.2.2",
+		"@types/node": "^22.10.0",
+		"@types/ws": "^8.5.13",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.7.2"
+	},
+	"author": "Kolby Wilson",
+	"license": "ISC"
+}
