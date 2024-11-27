@@ -22,5 +22,5 @@
 		"typescript": "^5.7.2"
 	},
 	"author": "Kolby Wilson",
-	"license": "ISC"
+	"license": "MIT"
 }
