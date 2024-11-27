@@ -106,8 +106,10 @@ const main = async () => {
 								blockImposter(commit.did, blockList);
 								break;
 							case "markcuban":
-								console.log("Blocking Mark Cuban Imposter");
-								blockImposter(commit.did, blockList);
+								if (commit.did !== "did:plc:y5xyloyy7s4a2bwfeimj7r3b") {
+									console.log("Blocking Mark Cuban Imposter");
+									blockImposter(commit.did, blockList);
+								}
 								break;
 							default:
 								// No action for unknown display names
