@@ -37,8 +37,6 @@ interface Blob {
 // Load environment variables from a .env file
 dotenv.config();
 
-console.log(process.env.BLOCKLIST_URI)
-
 // WebSocket URL for connecting to the Jetstream server
 const wsUrl = process.env.JETSTREAM_WS_URL!;
 
